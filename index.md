@@ -3,60 +3,65 @@
 ## 20200701
  - 額に入れてみた。
 
-<img src="./data/20200701/EbxpCIoU4AAqnQ_.jpg" width="30%">
+<img src="./data/20200701/EbxpCIoU4AAqnQ_.jpg" width="80%">
 
 ## 20200702
  - 光らせてみた。
 
-<img src="./data/20200702/Eb2vSyiVAAELUys.jpg" width="30%">
+<img src="./data/20200702/Eb2vSyiVAAELUys.jpg" width="80%">
 
 ## 20200703
  - 明滅させてみた。
 
- <img src="./data/20200703/20200703_012758.gif" width="30%">
+ <img src="./data/20200703/20200703_012758.gif" width="80%">
 
 ## 20200704
  - 色を変えてみた。
 
- <img src="./data/20200704/20200704_013732.gif" width="30%">
+ <img src="./data/20200704/20200704_013732.gif" width="80%">
 
 ## 20200705
  - 環境色を変えてみた。
 
- <img src="./data/20200705/20200705_081631.gif" width="30%">
+ <img src="./data/20200705/20200705_081631.gif" width="80%">
 
 ## 20200706
  - やや大きくしてみた。
 
- <img src="./data/20200706/IMG_20200706_023105~2.jpg" width="30%">
+ <img src="./data/20200706/IMG_20200706_023105~2.jpg" width="80%">
 
 ## 20200707
  - 回転させてみた。
 
- <img src="./data/20200707/20200707_034703.gif" width="30%">
+ <img src="./data/20200707/20200707_034703.gif" width="80%">
 
 
 ## 20200708
  - 高速明滅させてみた。
 
- <img src="./data/20200708/20200708_025506.gif" width="30%">
+ <img src="./data/20200708/20200708_025506.gif" width="80%">
  
 ## 20200709
  - 額に入れてみた。
 
- <img src="./data/20200709/IMG_20200709_001308.jpg" width="30%">
+ <img src="./data/20200709/IMG_20200709_001308.jpg" width="80%">
 
  ## 20200710
  - 額に入れてみた。
 
- <img src="./data/20200710/20200710_031505.gif" width="30%">
+ <img src="./data/20200710/20200710_031505.gif" width="80%">
 
   ## 20200712
  - 繋いでみた。
 
- <img src="./data/20200712/20200713_030754.gif" width="30%">
+ <img src="./data/20200712/20200713_030754.gif" width="80%">
  
   ## 20200713
  - 展開してみた。
 
- <img src="./data/20200713/AXE_development.png" width="30%">
+ <img src="./data/20200713/AXE_development.png" width="80%">
+
+  ## 20200714
+ - 仮想化してみた。
+
+ <img src="./data/20200714/AXE_blender_screen.PNG" width="80%">
