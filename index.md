@@ -65,3 +65,13 @@
  - 仮想化してみた。
 
  <img src="./data/20200714/AXE_blender_screen.PNG" width="80%">
+
+
+  ## 20200715
+ * 回してみた。
+
+ ** [Three.js](https://threejs.org/)
+ 
+ ** [tutorial](https://www.youtube.com/watch?v=8jP4xpga6yY)
+
+ <img src="./data/20200715/Three_AXE.gif" width="80%">
