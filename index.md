@@ -71,7 +71,14 @@
  * 回してみた。
 
  ** [Three.js](https://threejs.org/)
- 
+
  ** [tutorial](https://www.youtube.com/watch?v=8jP4xpga6yY)
+
+ <img src="./data/20200715/Three_AXE.gif" width="80%">
+
+ ## 20200717
+ * 回してみた修正版。
+
+ ** https://nkymut.github.io/nanika/data/20200715/Three/03_model/index.html
 
  <img src="./data/20200715/Three_AXE.gif" width="80%">
