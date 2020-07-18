@@ -51,7 +51,7 @@ function init() {
         // called when the resource is loaded
         function (gltf) {
             cube = gltf.scene.children[0];
-            cube.rotation.set(0,0.5*Math.PI,0);
+            cube.rotation.set(0,-0.5*Math.PI,0);
             cube.rotation.order = "YXZ";
             cube.castShadow = true;
             scene.add(cube);
@@ -121,7 +121,7 @@ function animate() {
     requestAnimationFrame(animate);
     renderer.render(scene, camera);
     //cube.rotation.x += 0.01;
-    cube.rotation.x += 0.01;
+    cube.rotation.x -= 0.02;
 
    
 }
