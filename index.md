@@ -103,3 +103,19 @@
 * モデリングしてみた。
 
  <img src="./data/20200718/Capture.PNG" width="80%">
+
+## 20200720
+
+* 画面化してみた。
+
+ <img src="./data/20200718/Capture.PNG" width="80%">
+
+
+## 20200721
+
+* 色分解してみた。
+
+ <img src="./data/20200721/AXE_Luminous.png" width="20%">
+ <img src="./data/20200721/AXE_TextureR.png" width="20%">
+<img src="./data/20200721/AXE_TextureG.png" width="20%">
+<img src="./data/20200721/AXE_TextureB.png" width="20%">
