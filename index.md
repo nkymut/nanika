@@ -123,12 +123,12 @@
 
 * テクスチャ貼り直した。
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="30%" src="https://nkymut.github.io/nanika/data/20200722/Three/02_Texture/index.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="30%" src="https://nkymut.github.io/nanika/data/20200722/02_Texture/index.html"></iframe>
 
-<img src="./data/20200721/02_texture\img\1.png" width="20%">
-<img src="./data/20200721/02_texture\img\2.png" width="20%">
-<img src="./data/20200721/02_texture\img\3.png" width="20%">
-<img src="./data/20200721/02_texture\img\4.png" width="20%">
-<img src="./data/20200721/02_texture\img\5.png" width="20%">
-<img src="./data/20200721/02_texture\img\6.png" width="20%">
+<img src="./data/20200721/02_texture/img/1.png" width="20%">
+<img src="./data/20200721/02_texture/img/2.png" width="20%">
+<img src="./data/20200721/02_texture/img/3.png" width="20%">
+<img src="./data/20200721/02_texture/img/4.png" width="20%">
+<img src="./data/20200721/02_texture/img/5.png" width="20%">
+<img src="./data/20200721/02_texture/img/6.png" width="20%">
 
