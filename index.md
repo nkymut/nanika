@@ -123,7 +123,7 @@
 
 * テクスチャ貼り直した。
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="30%" src="https://nkymut.github.io/nanika/data/20200722/02_texture/index.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" scrolling="no" marginheight="0" width="80%" src="https://nkymut.github.io/nanika/data/20200722/02_texture/index.html"></iframe>
 
 <img src="./data/20200722/02_texture/img/1.png" width="20%">
 <img src="./data/20200722/02_texture/img/2.png" width="20%">
