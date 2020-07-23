@@ -42,8 +42,8 @@ function init() {
 function animate() {
     requestAnimationFrame(animate);
     renderer.render(scene, camera);
-    // cube.rotation.x += 0.01;
-    // cube.rotation.z += 0.01;
+    cube.rotation.x += 0.01;
+    cube.rotation.z += 0.01;
 }
 
 function onWindowResize() {
