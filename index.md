@@ -136,7 +136,7 @@
 
 * [WebUSB](https://webusb.github.io/arduino/demos/rgb/)接続した。
 
-<img src="./data/20200724/RGB-LED.png" width="20%">
+<img src="./data/20200724/RGB-LED.png" width="80%">
 
 
 ## 20200728 Day21
@@ -145,4 +145,4 @@
 
 <iframe frameborder="no" border="0" marginwidth="0" scrolling="no" marginheight="0" width="80%" src="https://nkymut.github.io/nanika/data/20200728/04_shadow/index.html"></iframe>
 
-<img src="./data/20200728/Three-js-Shadow-Test.gif" width="20%">
+<img src="./data/20200728/Three-js-Shadow-Test.gif" width="80%">
