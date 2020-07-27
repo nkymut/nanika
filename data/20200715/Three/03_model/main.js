@@ -122,7 +122,7 @@ function animate() {
     renderer.render(scene, camera);
     //cube.rotation.x += 0.01;
     cube.rotation.x -= 0.02;
-
+   
    
 }
 

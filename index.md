@@ -137,3 +137,10 @@
 * [WebUSB](https://webusb.github.io/arduino/demos/rgb/)接続した。
 
 <img src="./data/20200724/RGB-LED.png" width="20%">
+
+
+## 20200728 Day21
+
+* 光をあてた。
+
+<img src="./data/20200728/Three-js-Shadow-Test.gif" width="20%">
