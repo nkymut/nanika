@@ -12,6 +12,8 @@ function init() {
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.PCFSoftShadowMap;
     renderer.xr.enabled = true;
+    renderer.setAnimationLoop(animate);
+
     //renderer.shadowMap.type = THREE.BasicShadowMap;
     document.body.appendChild(ARButton.createButton(renderer));
 
@@ -134,4 +136,4 @@ function onWindowResize() {
 
 window.addEventListener('resize', onWindowResize, false)
 init();
-animate();
+// animate();
