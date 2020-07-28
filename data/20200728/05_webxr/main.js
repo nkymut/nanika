@@ -93,8 +93,8 @@ function init() {
     cube.receiveShadow = true;
     cube.castShadow = true;
     scene.add(cube);
-    scene.add(light);
-    scene.add(light1);
+    // scene.add(light);
+    // scene.add(light1);
 
     //Create a plane that receives shadows (but does not cast them)
     var planeGeometry = new THREE.PlaneBufferGeometry(20, 20, 32, 32);
