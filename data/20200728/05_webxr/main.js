@@ -82,12 +82,12 @@ function init() {
     //     new THREE.MeshBasicMaterial({ map: loader.load("img/6.png") }),
     // ]
     const materialArray = [
-        new THREE.MeshPhongMaterial({ map: loader.load("img/1.png") }),
-        new THREE.MeshPhongMaterial({ map: loader.load("img/2.png") }),
-        new THREE.MeshPhongMaterial({ map: loader.load("img/3.png") }),
-        new THREE.MeshPhongMaterial({ map: loader.load("img/4.png") }),
-        new THREE.MeshPhongMaterial({ map: loader.load("img/5.png") }),
-        new THREE.MeshPhongMaterial({ map: loader.load("img/6.png") }),
+        new THREE.MeshBasicMaterial({ map: loader.load("img/1.png") }),
+        new THREE.MeshBasicMaterial({ map: loader.load("img/2.png") }),
+        new THREE.MeshBasicMaterial({ map: loader.load("img/3.png") }),
+        new THREE.MeshBasicMaterial({ map: loader.load("img/4.png") }),
+        new THREE.MeshBasicMaterial({ map: loader.load("img/5.png") }),
+        new THREE.MeshBasicMaterial({ map: loader.load("img/6.png") }),
     ]
     cube = new THREE.Mesh(geometry, materialArray);
     cube.receiveShadow = true;
@@ -113,15 +113,15 @@ function animate() {
     //requestAnimationFrame(animate);
 
     var time = Date.now() * 0.0005;
-    light.position.x = Math.sin(time * 0.5) * 60;
-    light.position.y = Math.cos(time * 0.5) * 60;
-    // light.position.z = Math.cos( time * 0.3 ) * 30+20;
-    light.position.z = 50;
+    // light.position.x = Math.sin(time * 0.5) * 60;
+    // light.position.y = Math.cos(time * 0.5) * 60;
+    // // light.position.z = Math.cos( time * 0.3 ) * 30+20;
+    // light.position.z = 50;
 
-    light1.position.x = Math.sin(time * 0.5 + Math.PI) * 60;
-    light1.position.y = Math.cos(time * 0.5 + Math.PI) * 60;
-    // light.position.z = Math.cos( time * 0.3 ) * 30+20;
-    light1.position.z = 50;
+    // light1.position.x = Math.sin(time * 0.5 + Math.PI) * 60;
+    // light1.position.y = Math.cos(time * 0.5 + Math.PI) * 60;
+    // // light.position.z = Math.cos( time * 0.3 ) * 30+20;
+    // light1.position.z = 50;
 
     renderer.render(scene, camera);
     // cube.rotation.x += 0.01;
