@@ -97,11 +97,11 @@ function init() {
     // scene.add(light1);
 
     //Create a plane that receives shadows (but does not cast them)
-    var planeGeometry = new THREE.PlaneBufferGeometry(20, 20, 32, 32);
-    var planeMaterial = new THREE.MeshStandardMaterial({ color: 0x00ff00 })
-    var plane = new THREE.Mesh(planeGeometry, planeMaterial);
-    plane.receiveShadow = true;
-    scene.add(plane);
+    // var planeGeometry = new THREE.PlaneBufferGeometry(20, 20, 32, 32);
+    // var planeMaterial = new THREE.MeshStandardMaterial({ color: 0x00ff00 })
+    // var plane = new THREE.Mesh(planeGeometry, planeMaterial);
+    // plane.receiveShadow = true;
+    // scene.add(plane);
 
     camera.position.z = 80;
     cube.rotation.x -= 0.25 * Math.PI;
