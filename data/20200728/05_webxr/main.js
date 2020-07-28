@@ -1,6 +1,6 @@
 
-let scene, camera, renderer, cube,light,meshFloor;
-
+let scene, camera, renderer, cube, light, light1, meshFloor;
+import { ARButton } from '../..//20200715/Three/node_modules/three/examples/jsm/webxr/ARButton.js';
 
 function init() {
     // Our Javascript will go here.
@@ -11,8 +11,10 @@ function init() {
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    renderer.xr.enabled = true;
     //renderer.shadowMap.type = THREE.BasicShadowMap;
-    
+    document.body.appendChild(ARButton.createButton(renderer));
+
     document.body.appendChild(renderer.domElement);
     //var geometry = new THREE.BoxGeometry();
     var geometry = new THREE.BoxBufferGeometry(32, 25, 92);
@@ -20,32 +22,47 @@ function init() {
     var loader = new THREE.TextureLoader();
     // const texture = new THREE.TextureLoader().load('img/AXE_Texture.png');
     var sphere = new THREE.SphereBufferGeometry(0.5, 16, 8);
-    
-    ambientLight = new THREE.AmbientLight(0xffffff,0.03);
+
+    let ambientLight = new THREE.AmbientLight(0xffffff, 0.03);
     scene.add(ambientLight);
-    
-    light = new THREE.PointLight(0xff0040, 1, 0,5);
-    //light = new THREE.PointLight(0xffffff, 1, 200,2);
+
+    //light = new THREE.PointLight(0xff0040, 1, 0, 5);
+    light = new THREE.PointLight(0xffffff, 1, 200,2);
     light.add(new THREE.Mesh(sphere, new THREE.MeshBasicMaterial({ color: 0xff0040 })));
     light.castShadow = true;
     light.shadow.camera.near = 0.1;
     light.shadow.camera.far = 1000;
     light.position.set(20, 20, 20);
     light.shadowCameraVisible = true;
-    light1 = new THREE.PointLight(0x4000ff, 1, 200,2);
+    //light1 = new THREE.PointLight(0x4000ff, 1, 200, 2);
+    light1 = new THREE.PointLight(0xffffff, 1, 200,2);
     light1.add(new THREE.Mesh(sphere, new THREE.MeshBasicMaterial({ color: 0x4000ff })));
     light1.castShadow = true;
     light1.shadow.camera.near = 0.1;
     light1.shadow.camera.far = 1000;
     light1.position.set(20, 20, -20);
-    
+
     const controls = new THREE.OrbitControls(camera, renderer.domElement);
     controls.minZoom = 1;
     controls.maxZoom = 1.5;
 
     controls.enablePan = false;
 
-    meshFloor = new THREE.Mesh(new THREE.PlaneGeometry(100,100,100,100),new THREE.MeshPhongMaterial({color:0xffffff}));
+    function onSelect() {
+        console.log("onSelect");
+        // var material = new THREE.MeshPhongMaterial( { color: 0xffffff * Math.random() } );
+        // var mesh = new THREE.Mesh( geometry, material );
+        // mesh.position.set( 0, 0, - 0.3 ).applyMatrix4( controller.matrixWorld );
+        // mesh.quaternion.setFromRotationMatrix( controller.matrixWorld );
+        // scene.add( mesh );
+
+    }
+
+    let controller = renderer.xr.getController(0);
+    controller.addEventListener('select', onSelect);
+    scene.add(controller);
+
+    meshFloor = new THREE.Mesh(new THREE.PlaneGeometry(100, 100, 100, 100), new THREE.MeshPhongMaterial({ color: 0xffffff }));
     meshFloor.material.side = THREE.DoubleSide;
     meshFloor.receiveShadow = true;
     //meshFloor.castShadow = true;
@@ -76,7 +93,7 @@ function init() {
     scene.add(cube);
     scene.add(light);
     scene.add(light1);
-    
+
     //Create a plane that receives shadows (but does not cast them)
     var planeGeometry = new THREE.PlaneBufferGeometry(20, 20, 32, 32);
     var planeMaterial = new THREE.MeshStandardMaterial({ color: 0x00ff00 })
@@ -94,14 +111,14 @@ function animate() {
     requestAnimationFrame(animate);
 
     var time = Date.now() * 0.0005;
-    light.position.x = Math.sin( time * 0.5 ) * 60;
-    light.position.y = Math.cos( time * 0.5 ) * 60;
-   // light.position.z = Math.cos( time * 0.3 ) * 30+20;
+    light.position.x = Math.sin(time * 0.5) * 60;
+    light.position.y = Math.cos(time * 0.5) * 60;
+    // light.position.z = Math.cos( time * 0.3 ) * 30+20;
     light.position.z = 50;
 
-    light1.position.x = Math.sin( time * 0.5 + Math.PI ) * 60;
-    light1.position.y = Math.cos( time * 0.5 + Math.PI) * 60;
-   // light.position.z = Math.cos( time * 0.3 ) * 30+20;
+    light1.position.x = Math.sin(time * 0.5 + Math.PI) * 60;
+    light1.position.y = Math.cos(time * 0.5 + Math.PI) * 60;
+    // light.position.z = Math.cos( time * 0.3 ) * 30+20;
     light1.position.z = 50;
 
     renderer.render(scene, camera);

@@ -123,7 +123,7 @@
 
 * テクスチャ貼り直した。
 
-<iframe frameborder="no" border="0" marginwidth="0" scrolling="no" marginheight="0" width="80%" src="https://nkymut.github.io/nanika/data/20200722/02_texture/index.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" scrolling="no" marginheight="0" width="80%" height="30%" src="https://nkymut.github.io/nanika/data/20200722/02_texture/index.html"></iframe>
 
 <img src="./data/20200722/02_texture/img/1.png" width="20%">
 <img src="./data/20200722/02_texture/img/2.png" width="20%">
@@ -139,10 +139,18 @@
 <img src="./data/20200724/RGB-LED.png" width="80%">
 
 
-## 20200728 Day21
+## 20200727 Day21
 
 * 光をあてた。
 
-<iframe frameborder="no" border="0" marginwidth="0" scrolling="no" marginheight="0" width="80%" src="https://nkymut.github.io/nanika/data/20200728/04_shadow/index.html"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" scrolling="no" marginheight="0" width="80%" src="https://nkymut.github.io/nanika/data/20200727/04_shadow/index.html"></iframe>
 
-<img src="./data/20200728/Three-js-Shadow-Test.gif" width="80%">
+<img src="./data/20200727/Three-js-Shadow-Test.gif" width="80%">
+
+## 20200727 Day22
+
+* 現実拡張した。
+
+<iframe frameborder="no" border="0" marginwidth="0" scrolling="no" marginheight="0" width="80%" height="30%" src="https://nkymut.github.io/nanika/data/20200728/05_webxr/index.html"></iframe>
+
+
