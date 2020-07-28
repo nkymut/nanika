@@ -110,7 +110,7 @@ function init() {
 
 }
 function animate() {
-    requestAnimationFrame(animate);
+    //requestAnimationFrame(animate);
 
     var time = Date.now() * 0.0005;
     light.position.x = Math.sin(time * 0.5) * 60;
