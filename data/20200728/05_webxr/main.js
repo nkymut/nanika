@@ -19,7 +19,7 @@ function init() {
 
     document.body.appendChild(renderer.domElement);
     //var geometry = new THREE.BoxGeometry();
-    var geometry = new THREE.BoxBufferGeometry(3.2, 2.5, 9.2);
+    var geometry = new THREE.BoxBufferGeometry(.32, .25, .92);
     // var material = new THREE.MeshBasicMaterial( { color: 0x00ffff } );
     var loader = new THREE.TextureLoader();
     // const texture = new THREE.TextureLoader().load('img/AXE_Texture.png');
@@ -122,7 +122,8 @@ function animate() {
     // light1.position.y = Math.cos(time * 0.5 + Math.PI) * 60;
     // // light.position.z = Math.cos( time * 0.3 ) * 30+20;
     // light1.position.z = 50;
-
+    cube.rotation.x += 0.01;
+    cube.rotation.z += 0.01;
     renderer.render(scene, camera);
     // cube.rotation.x += 0.01;
     // cube.rotation.z += 0.01;
