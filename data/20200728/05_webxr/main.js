@@ -1,6 +1,6 @@
 
 let scene, camera, renderer, cube, light, light1, meshFloor;
-import { ARButton } from '../..//20200715/Three/node_modules/three/examples/jsm/webxr/ARButton.js';
+import { ARButton } from './js/ARButton.js';
 
 function init() {
     // Our Javascript will go here.
