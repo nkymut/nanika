@@ -57,7 +57,7 @@ function init() {
         // mesh.position.set( 0, 0, - 0.3 ).applyMatrix4( controller.matrixWorld );
         // mesh.quaternion.setFromRotationMatrix( controller.matrixWorld );
         // scene.add( mesh );
-
+        cube.position.set( 0, 0, - 1 ).applyMatrix4( controller.matrixWorld );
     }
 
     let controller = renderer.xr.getController(0);
@@ -108,7 +108,7 @@ function init() {
     cube.rotation.y += 1 * Math.PI;
     cube.rotation.z -= 0.75 * Math.PI;
    // cube.position.z = 250;
-    mesh.position.set( 0, 0, - 100 ).applyMatrix4( controller.matrixWorld );
+  
 
 }
 function animate() {
