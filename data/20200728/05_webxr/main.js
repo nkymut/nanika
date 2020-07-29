@@ -1,5 +1,5 @@
 
-let scene, camera, renderer, cube, light, light1, meshFloor;
+let scene, camera, renderer, cube, light, light1, meshFloor,materialArray;
 import { ARButton } from './js/ARButton.js';
 
 function init() {
@@ -57,6 +57,10 @@ function init() {
         // mesh.position.set( 0, 0, - 0.3 ).applyMatrix4( controller.matrixWorld );
         // mesh.quaternion.setFromRotationMatrix( controller.matrixWorld );
         // scene.add( mesh );
+        let cube = new THREE.Mesh(geometry, materialArray);
+        cube.receiveShadow = true;
+        cube.castShadow = true;
+        scene.add(cube);
         cube.position.set( 0, 0, - 1 ).applyMatrix4( controller.matrixWorld );
     }
 
@@ -81,7 +85,7 @@ function init() {
     //     new THREE.MeshBasicMaterial({ map: loader.load("img/5.png") }),
     //     new THREE.MeshBasicMaterial({ map: loader.load("img/6.png") }),
     // ]
-    const materialArray = [
+    materialArray = [
         new THREE.MeshBasicMaterial({ map: loader.load("img/1.png") }),
         new THREE.MeshBasicMaterial({ map: loader.load("img/2.png") }),
         new THREE.MeshBasicMaterial({ map: loader.load("img/3.png") }),
