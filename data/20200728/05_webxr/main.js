@@ -107,7 +107,8 @@ function init() {
     cube.rotation.x -= 0.25 * Math.PI;
     cube.rotation.y += 1 * Math.PI;
     cube.rotation.z -= 0.75 * Math.PI;
-    cube.position.z = 250;
+   // cube.position.z = 250;
+    mesh.position.set( 0, 0, - 100 ).applyMatrix4( controller.matrixWorld );
 
 }
 function animate() {
