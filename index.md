@@ -147,7 +147,7 @@
 
 <img src="./data/20200727/Three-js-Shadow-Test.gif" width="80%">
 
-## 20200727 Day22
+## 20200728 Day22
 
 * 現実拡張した。
 
