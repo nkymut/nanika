@@ -1,0 +1,3 @@
+[submodule "WEBUSB ARDUINO"]
+	path = /data/20200724/arduino
+	url = https://github.com/webusb/arduino.git
