@@ -4,23 +4,7 @@
   </head>
   <body>
     <a-scene background="color: green">
-      <a-sphere color="red" position="-3 5 0" id="sphere"></a-sphere>
-      <a-animation
-        attribute="position"
-        from="-3 5 0"
-        to="3 5 0"
-        dur="2000"
-        direction="alternate"
-        repeat="indefinite"
-        id="bounce"
-      ></a-animation>
-      <a-animation
-        attribute="rotation"
-        to="0 360 0"
-        dur="10000"
-        easing="linear"
-        repeat="indefinite"
-      ></a-animation>
-    </a-scene>
+        <a-sphere position="-5 1.5 -5" color="red" animation="property: position; from:-5 1.5 -5; to: 5 1.5 -5; dur: 3000; easing: easeInOutSine; loop:true; direction: alternate;" ></a-sphere>
+        <a-sphere position="5 1.5 -5" color="red" animation="property: position;  to: -5 1.5 -5; dur: 3000; easing: easeInOutSine; loop:true; direction: alternate;" ></a-sphere>
   </body>
 </html>
