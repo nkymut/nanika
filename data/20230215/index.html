@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene background="color: green">
+      <a-sphere color="red" position="-3 5 0" id="sphere"></a-sphere>
+      <a-animation
+        attribute="position"
+        from="-3 5 0"
+        to="3 5 0"
+        dur="2000"
+        direction="alternate"
+        repeat="indefinite"
+        id="bounce"
+      ></a-animation>
+      <a-animation
+        attribute="rotation"
+        to="0 360 0"
+        dur="10000"
+        easing="linear"
+        repeat="indefinite"
+      ></a-animation>
+    </a-scene>
+  </body>
+</html>
