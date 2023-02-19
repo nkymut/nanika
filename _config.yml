@@ -1,2 +1,9 @@
 # theme: minima
 remote-theme:LeNPaul/Millennial
+
+# Turn on incremental building to reduce overall build time (still in beta)
+# See: https://jekyllrb.com/docs/configuration/incremental-regeneration/
+incremental: true
+
+
+
