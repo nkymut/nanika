@@ -1,0 +1,128 @@
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
+</head>
+
+
+
+<body>
+
+  <script>
+    let scenes = ["first-scene", "second-scene", "third-scene"];
+    let currentSceneId = 0;
+    let timeStamp = Date.now();
+    function nextScene() {
+      console.log(currentSceneId);
+      let currentScene = document.querySelector(`#${scenes[currentSceneId]}`);
+      let nextSceneId = (currentSceneId + 1) % scenes.length;
+      let nextScene = document.querySelector(`#${scenes[nextSceneId]}`);
+      currentScene.setAttribute("visible", false);
+      nextScene.setAttribute("visible", true);
+      currentSceneId = nextSceneId;
+      initCountdown();  
+    }
+
+    function switchScene() {
+      var firstScene = document.querySelector("#first-scene");
+      var secondScene = document.querySelector("#second-scene");
+      console.log("firstScene", firstScene.getAttribute("visible"));
+      console.log("second", secondScene.getAttribute("visible"));
+      if (firstScene.getAttribute("visible")) {
+        firstScene.setAttribute("visible", false);
+        secondScene.setAttribute("visible", true);
+      } else {
+        firstScene.setAttribute("visible", true);
+        secondScene.setAttribute("visible", false);
+      }
+    }
+
+      function initCountdown() {
+        console.log("register countdown")
+        var textEl = document.querySelector('#countdown');
+        var count = 30;
+        var self = this;
+        var interval = setInterval(function () {
+          count--;
+          textEl.setAttribute('value', count);
+          if (count <= 0) {
+            //self.el.emit('countdownfinished');
+            clearInterval(interval);
+            nextScene();
+          }
+        }, 1000);
+      }
+ 
+
+      initCountdown();
+
+      // AFRAME.registerComponent('cursor-listener', {
+      //   init: function () {
+      //     this.el.addEventListener('click', function (evt) {
+      //       var firstScene = document.querySelector("#first-scene");
+      //       var secondScene = document.querySelector("#second-scene");
+      //       console.log(firstScene);
+      //       if (firstScene.getAttribute("visible")) {
+      //         firstScene.setAttribute("visible", false);
+      //         secondScene.setAttribute("visible", true);
+      //       } else {
+      //         firstScene.setAttribute("visible", true);
+      //         secondScene.setAttribute("visible", false);
+      //       }
+      //     });
+      //   }
+      // });
+  </script>
+
+
+  <a-scene background="color: green" onclick="console.log('hello!!');nextScene();">
+    <a-text id="countdown" value="30" position="30 1.6 -50" scale="100 100 100"></a-text>
+
+    <!-- First scene -->
+    <a-entity id="first-scene">
+      <a-sphere position="5 1.5 -5" color="red"
+        animation="property: position; from:5 1.5 -5; to: -5 1.5 -5; dur: 4000; easing: easeInOutSine; loop:true; dir:alternate;"></a-sphere>
+      <!-- <a-sphere position="5 1.5 -5" color="red" animation="property: position;  to: -5 1.5 -5; dur: 3000; easing: easeInOutSine; loop:true; direction: alternate;" ></a-sphere> -->
+      <!-- Add your scene content here -->
+    </a-entity>
+
+    <!-- Fadeout plane -->
+    <a-plane id="fadeout" position="0 0 -2" width="4" height="4" color="#000" opacity="0" material="transparent: true"
+      visible="false">
+      <a-animation attribute="material.opacity" dur="1000" to="1" begin="fadeout"></a-animation>
+    </a-plane>
+
+    <!-- Second scene -->
+    <a-entity id="second-scene" visible="false">
+      <!-- Add your second scene content here -->
+      <a-sphere position="0 4.5 -5" color="blue"
+        animation="property: position; from:0 4.5 -5; to: 0 -1.5 -5; dur: 4000; easing: easeInOutSine; loop:true; dir:alternate;"></a-sphere>
+      <!-- <a-sphere position="0 -1.5 -5" color="blue" animation="property: position;  to: 0 4.5 -5; dur: 3000; easing: easeInOutSine; loop:true; direction: alternate;" ></a-sphere> -->
+
+    </a-entity>
+
+    <!-- Third scene -->
+    <a-entity id="third-scene" visible="false">
+      <!-- Add your second scene content here -->
+      <a-sphere position="0 1.5 -5" color="#AA00AA"
+        animation="property: position; from: 0 1.5 -3.5; to: 0 1.5 -100; dur: 3000; easing: easeInOutSine; loop:true; dir:alternate"></a-sphere>
+      <!-- <a-sphere position="0 1.5 -5" color="blue" animation="property: position;  to: 0 1.5 -5; dur: 3000; easing: easeInOutSine; loop:true; direction: alternate;" ></a-sphere> -->
+
+    </a-entity>
+
+    <a-entity cursor-listener></a-entity>
+
+
+  </a-scene>
+
+<script>    
+
+document.querySelector('#countdown').addEventListener('countdownfinished', function () {
+  console.log('Countdown finished!');
+});
+</script>
+
+
+</body>
+
+</html>
